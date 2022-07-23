@@ -3,7 +3,7 @@
 Image classification of the CIFAR-10 dataset.
 
 Model 1: 
-Test Accuraccy= 68%
++ Test Accuraccy= 68%
 ```
 model_1 = keras.models.Sequential([
     keras.layers.Conv2D(32, kernel_size=5, activation='relu', strides = (2,2), padding='same',input_shape=x_train.shape[1:]), 
@@ -21,7 +21,7 @@ model_1 = keras.models.Sequential([
 
 Model 2:
 + Batch normalization, Kernel regularization and learning_rate Scheduler
-Test Accuraccy= 88%
++ Test Accuraccy= 88%
 ```
 wdecay=1e-4
 model_2 = keras.models.Sequential([
