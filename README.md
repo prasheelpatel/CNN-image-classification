@@ -4,7 +4,7 @@ CIFAR-10 dataset
 
 Model 1: 
 + Test Accuraccy= 68%
-```
+```python
 model_1 = keras.models.Sequential([
     keras.layers.Conv2D(32, kernel_size=5, activation='relu', strides = (2,2), padding='same',input_shape=x_train.shape[1:]), 
     keras.layers.Conv2D(32, kernel_size=5, activation='relu', strides = (2,2), ), 
@@ -15,14 +15,12 @@ model_1 = keras.models.Sequential([
     keras.layers.Dropout(0.5),
     keras.layers.Dense(num_classes, activation='softmax'), 
 ])
-
 ```
-
 
 Model 2:
 + Batch normalization, Kernel regularization and learning_rate Scheduler
 + Test Accuraccy= 88%
-```
+```python
 wdecay=1e-4
 model_2 = keras.models.Sequential([
     keras.layers.Conv2D(32, kernel_size=3,padding='same', activation='relu',kernel_regularizer=keras.regularizers.l2(wdecay), input_shape=x_train.shape[1:]), 
