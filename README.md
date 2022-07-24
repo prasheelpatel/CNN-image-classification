@@ -1,6 +1,6 @@
 # Convolutional Neural Network (CNN) models for image classification
 
-Image classification of the CIFAR-10 dataset.
+CIFAR-10 dataset
 
 Model 1: 
 + Test Accuraccy= 68%
